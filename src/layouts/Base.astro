@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+interface Props { title: string; description?: string; }
+const { title, description = 'Always Open - 24/7 AI answering for owner-operated businesses.' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo" aria-label="Always Open home">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+          </svg>
+        </div>
+        <span class="logo-text">Always Open</span>
+      </a>
+    </header>
+    <slot />
+    <footer>
+      <p>&copy; {new Date().getFullYear()} Always Open. All rights reserved. &nbsp;&middot;&nbsp; <a href="/privacy">Privacy Policy</a></p>
+    </footer>
+  </body>
+</html>
+<style>
+  header { background: var(--navy); padding: 28px 48px; display: flex; align-items: center; }
+  .logo { display: flex; align-items: center; gap: 12px; border-bottom: none; }
+  .logo-mark { width: 36px; height: 36px; background: var(--amber); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
+  .logo-mark svg { width: 20px; height: 20px; fill: var(--navy); }
+  .logo-text { font-family: 'Playfair Display', serif; font-size: 20px; color: #fff; }
+  footer { background: var(--navy); padding: 32px 48px; text-align: center; }
+  footer p { color: rgba(255,255,255,0.4); font-size: 13px; margin: 0; }
+  footer a { color: rgba(255,255,255,0.5); border-bottom-color: rgba(255,255,255,0.2); }
+  footer a:hover { color: var(--amber); }
+  @media (max-width: 640px) { header, footer { padding-left: 24px; padding-right: 24px; } }
+</style>
