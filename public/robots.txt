@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://openalways.io/sitemap-index.xml
