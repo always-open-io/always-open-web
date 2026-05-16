@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Always Open - 24/7 AI Answering for Owner-Operated Businesses" description="Always Open answers your calls 24/7, captures every lead, and delivers a daily briefing every morning.">
+  <div class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">24/7 AI Answering</p>
+      <h1>Never miss a call.<br />Never lose a lead.</h1>
+      <p class="subhead">Always Open answers your calls around the clock, captures every lead, and delivers a daily briefing so you start every morning informed.</p>
+      <a href="mailto:aj@openalways.io" class="cta">Get Early Access</a>
+    </div>
+  </div>
+  <section class="value">
+    <div class="inner">
+      <div class="card">
+        <div class="card-icon">📞</div>
+        <h3>24/7 Call Answering</h3>
+        <p>Your AI agent Josh answers every call — nights, weekends, holidays — and captures the lead before they move on to the next competitor.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌅</div>
+        <h3>Morning Edge Briefing</h3>
+        <p>Every morning you receive a daily digest of every call: caller name, summary, lead score, and recommended action.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Hot Lead Alerts</h3>
+        <p>When a high-intent caller comes in, you get an SMS instantly — so you can call back while they are still warm.</p>
+      </div>
+    </div>
+  </section>
+  <section class="positioning">
+    <div class="inner">
+      <p class="eyebrow">Our Philosophy</p>
+      <blockquote>Outcome heavy. Technology light.</blockquote>
+      <p>We are not selling you a platform. We are delivering a result: every call answered, every lead captured.</p>
+    </div>
+  </section>
+</Base>
+<style>
+  .hero { background: var(--navy); padding: 96px 48px 80px; border-bottom: 3px solid var(--amber); }
+  .hero-inner { max-width: 680px; margin: 0 auto; }
+  .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--amber); margin-bottom: 20px; }
+  h1 { font-family: 'Playfair Display', serif; font-size: clamp(40px,6vw,64px); color: #fff; line-height: 1.1; font-weight: 400; margin-bottom: 24px; }
+  .subhead { font-size: 18px; color: rgba(255,255,255,0.65); font-weight: 300; line-height: 1.65; margin-bottom: 40px; max-width: 540px; }
+  .cta { display: inline-block; background: var(--amber); color: var(--navy); font-weight: 500; font-size: 15px; padding: 14px 32px; border-radius: 4px; border-bottom: none; transition: opacity 0.2s; }
+  .cta:hover { opacity: 0.88; color: var(--navy); }
+  .value { padding: 80px 48px; }
+  .value .inner { max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 32px; }
+  .card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 32px; }
+  .card-icon { font-size: 28px; margin-bottom: 16px; }
+  h3 { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600; color: var(--navy); margin-bottom: 12px; }
+  .card p { color: var(--body); font-size: 15px; font-weight: 300; line-height: 1.65; margin: 0; }
+  .positioning { background: var(--navy); padding: 80px 48px; text-align: center; }
+  .positioning .inner { max-width: 640px; margin: 0 auto; }
+  .positioning .eyebrow { color: var(--amber); }
+  blockquote { font-family: 'Playfair Display', serif; font-size: clamp(28px,4vw,40px); color: #fff; font-weight: 400; font-style: italic; line-height: 1.3; margin: 20px 0 24px; }
+  .positioning p:not(.eyebrow) { color: rgba(255,255,255,0.6); font-size: 16px; font-weight: 300; line-height: 1.7; margin: 0; }
+  @media (max-width: 640px) { .hero, .value, .positioning { padding-left: 24px; padding-right: 24px; } }
+</style>
