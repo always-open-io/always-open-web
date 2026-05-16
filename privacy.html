@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Always Open</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #1A2740;
+      --sage: #7A9E7E;
+      --amber: #C9952A;
+      --cream: #F7F4EF;
+      --muted: #6B7280;
+      --border: #E5E0D8;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--cream);
+      color: var(--navy);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    header {
+      background: var(--navy);
+      padding: 28px 48px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--amber);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-mark svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--navy);
+    }
+
+    .logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: #fff;
+      letter-spacing: 0.01em;
+    }
+
+    .hero {
+      background: var(--navy);
+      padding: 72px 48px 56px;
+      border-bottom: 3px solid var(--amber);
+    }
+
+    .hero-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 5vw, 52px);
+      color: #fff;
+      line-height: 1.15;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .hero-meta {
+      font-size: 14px;
+      color: rgba(255,255,255,0.5);
+      font-weight: 400;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 48px 96px;
+    }
+
+    section {
+      margin-bottom: 52px;
+      padding-bottom: 52px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 16px;
+      padding-left: 16px;
+      border-left: 3px solid var(--amber);
+    }
+
+    p {
+      color: #3D4A5C;
+      margin-bottom: 14px;
+      font-weight: 300;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0;
+    }
+
+    ul li {
+      padding: 8px 0 8px 24px;
+      position: relative;
+      color: #3D4A5C;
+      font-weight: 300;
+      border-bottom: 1px solid var(--border);
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 17px;
+      width: 8px;
+      height: 8px;
+      background: var(--sage);
+      border-radius: 50%;
+    }
+
+    a {
+      color: var(--sage);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+
+    a:hover { color: var(--amber); }
+
+    .callout {
+      background: var(--navy);
+      color: #fff;
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin-top: 20px;
+    }
+
+    .callout p {
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .callout p:last-child { margin-bottom: 0; }
+
+    .callout strong {
+      color: var(--amber);
+      font-weight: 500;
+    }
+
+    footer {
+      background: var(--navy);
+      padding: 32px 48px;
+      text-align: center;
+    }
+
+    footer p {
+      color: rgba(255,255,255,0.4);
+      font-size: 13px;
+      margin: 0;
+    }
+
+    @media (max-width: 640px) {
+      header, .hero, footer { padding-left: 24px; padding-right: 24px; }
+      main { padding: 40px 24px 64px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-mark">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+      </svg>
+    </div>
+    <span class="logo-text">Always Open</span>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Legal</p>
+      <h1>Privacy Policy</h1>
+      <p class="hero-meta">Effective date: May 15, 2025 &nbsp;·&nbsp; Always Open / openalways.io</p>
+    </div>
+  </div>
+
+  <main>
+
+    <section>
+      <h2>Overview</h2>
+      <p>Always Open ("we," "our," or "us") operates an AI-powered answering and lead capture service for small businesses. This Privacy Policy describes how we collect, use, and protect information in connection with our service, including SMS notifications sent to business clients.</p>
+      <p>By using our service or providing your phone number to receive SMS alerts, you agree to the practices described in this policy.</p>
+    </section>
+
+    <section>
+      <h2>Information We Collect</h2>
+      <p>We collect the following categories of information:</p>
+      <ul>
+        <li>Business contact information (name, email address, phone number) provided during onboarding</li>
+        <li>Inbound caller information captured during AI-answered calls (caller name, phone number, service request details)</li>
+        <li>Call recordings and transcripts generated by our AI voice agent</li>
+        <li>SMS opt-in consent records, including date, time, and method of consent</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>SMS Notifications</h2>
+      <p>Always Open sends SMS messages to business clients who have opted in to receive lead alert notifications. These messages notify you when a potential customer has contacted your business through our AI answering service.</p>
+      <ul>
+        <li>SMS alerts are sent only to clients who have explicitly opted in via our onboarding form</li>
+        <li>Message frequency varies based on inbound call volume — typically 1–5 messages per day</li>
+        <li>Standard message and data rates may apply depending on your mobile carrier</li>
+        <li>You may opt out at any time by replying <strong>STOP</strong> to any SMS message</li>
+        <li>To opt back in, reply <strong>START</strong> or contact us directly</li>
+        <li>For help, reply <strong>HELP</strong> or email us at the address below</li>
+      </ul>
+      <p>We do not sell or share your phone number with third parties for marketing purposes.</p>
+    </section>
+
+    <section>
+      <h2>How We Use Your Information</h2>
+      <ul>
+        <li>To deliver AI-answered call services on behalf of your business</li>
+        <li>To send SMS lead alert notifications you have consented to receive</li>
+        <li>To generate call summaries and lead scoring for your Morning Edge daily briefing</li>
+        <li>To improve our service quality and AI agent performance</li>
+        <li>To communicate with you about your account and service updates</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data Sharing</h2>
+      <p>We do not sell your personal information. We share data only with trusted service providers necessary to operate our platform, including:</p>
+      <ul>
+        <li>Synthflow — AI voice agent infrastructure</li>
+        <li>Twilio — SMS delivery</li>
+        <li>Google — data storage (Google Sheets)</li>
+        <li>Make (Integromat) — workflow automation</li>
+        <li>Anthropic — AI analysis and call summarization</li>
+      </ul>
+      <p>Each provider operates under their own privacy policy and data processing terms. We require all providers to maintain appropriate data security standards.</p>
+    </section>
+
+    <section>
+      <h2>Data Retention</h2>
+      <p>We retain call data, transcripts, and lead information for the duration of your service agreement and up to 12 months following termination, unless you request earlier deletion. SMS consent records are retained for a minimum of 4 years as required by applicable regulations.</p>
+    </section>
+
+    <section>
+      <h2>Your Rights</h2>
+      <p>You have the right to access, correct, or request deletion of your personal information at any time. To exercise these rights, contact us at the address below. We will respond within 30 days.</p>
+    </section>
+
+    <section>
+      <h2>Security</h2>
+      <p>We use industry-standard security practices to protect your information, including encrypted data transmission and access controls. No method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy periodically. When we do, we will update the effective date at the top of this page. Continued use of our service after changes constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <div class="callout">
+        <p><strong>Always Open</strong></p>
+        <p>Questions about this Privacy Policy or your data?</p>
+        <p>Email: <a href="mailto:aj@openalways.io" style="color: var(--amber); border-bottom-color: var(--amber);">aj@openalways.io</a></p>
+        <p>Website: <a href="https://openalways.io" style="color: var(--amber); border-bottom-color: var(--amber);">openalways.io</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Always Open. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
